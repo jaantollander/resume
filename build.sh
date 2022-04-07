@@ -5,6 +5,8 @@ STYLES_DIR=styles
 STYLE=chmduquesne
 
 pdf() {
+    mkdir -p "$OUT_DIR"
+
     for FILE in "$IN_DIR"/*.md; do
         # Extract filename from the markdown file.
         echo "Input: $FILE"
@@ -34,6 +36,8 @@ pdf() {
 }
 
 html() {
+    mkdir -p "$OUT_DIR"
+
     for FILE in "$IN_DIR"/*.md; do
         # Extract filename from the markdown file.
         echo "Input: $FILE"
