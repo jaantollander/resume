@@ -14,12 +14,12 @@ Education
 ---------
 
 2018 - 2022 (expected)
-:   **MSc in Computer Science**, *Aalto University*
+:   **MSc in Computer Science**, [*Aalto University*](https://www.aalto.fi/en)
 
     Track: *Algorithms, Logic and Computation*
 
 2014 - 2018
-:   **BSc in Applied Mathematics**, *Aalto University*
+:   **BSc in Applied Mathematics**, [*Aalto University*](https://www.aalto.fi/en)
 
     Minor: *Computer Science*
 
@@ -28,34 +28,44 @@ Experience
 ----------
 
 2021
-: **Cloud Trainee** at **CSC**
+: **Cloud Trainee** at [*CSC*](https://csc.fi/en/)
 
-: todo
+: Supervisors: *Kalle Happonen*
 
 2016 - 2021
-: **Research Assistant** at **Systems Analysis Laboratory**
+: **Research Assistant** at [*Systems Analysis Laboratory*](https://sal.aalto.fi/en/)
 
-: todo
+: Supervisors: *Fabricio Oliveira*, *Anton von Schantz*
 
 
 Technical Skills
 ----------------
 
-* **Programming**: Julia language, Bash, Python, C, C++, Haskell
+* **Natural Languages**: Finnish (native), English (professional)
 
-* **Software Engineering**: Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift
+* **Applied Mathematics**: Mathematical modeling, Optimization, Constraint programming, Logic, Numerical analysis, Computer algebra
 
-* **Technical Writing**: Markdown, LaTeX
+* **Computer Science**: Algorithm design, Data structures, Scientific computing, Parallel algorithms, Cloud computing, Web development, Information Security
+
+* **Programming**: Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
+
+* **Software Engineering**: Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify
+
+* **Technical Writing**: Markdown, LaTeX, Pandoc
 
 * **Development Environment**: Arch Linux, i3wm, Zsh, Tmux, NeoVim, VSCode
 
 
-Languages
----------
+Projects
+--------
 
-Languages
-: Finnish (native)
-: English (professional)
+* [github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) and documentation
+
+* [github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) and documentation
+
+* [github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles)
+
+* [jaantollander.com](https://jaantollander.com/)
 
 
 ----
