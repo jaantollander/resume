@@ -9,7 +9,7 @@ on:
       - '*'
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: ""
 
 jobs:
   build-resume:
@@ -27,7 +27,7 @@ jobs:
       - name: "Upload a Build Artifact"
         uses: "actions/upload-artifact@v2.2.3"
         with:
-          name: "Resume PDF"
+          name: "Resume"
           # A file, directory or wildcard pattern that describes what to upload
           path: "output/*.pdf"
 
