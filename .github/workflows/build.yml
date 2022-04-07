@@ -1,0 +1,41 @@
+# Build and release new version of the resume if new tag is added.
+name: "build"
+
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - '*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-resume:
+    runs-on: "ubuntu-20.04"
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: "actions/checkout@v2"
+
+      - name: "Install dependencies"
+        run: "sudo apt install pandoc context"
+
+      - name: "Build resume"
+        run: "sh build.sh pdf"
+
+      - name: "Upload a Build Artifact"
+        uses: "actions/upload-artifact@v2.2.3"
+        with:
+          name: "Resume PDF"
+          # A file, directory or wildcard pattern that describes what to upload
+          path: "output/*.pdf"
+
+      - name: "Release resume"
+        uses: "softprops/action-gh-release@v1"
+        if: "startsWith(github.ref, 'refs/tags/')"
+        with:
+          files: |
+            "output/*.pdf"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
