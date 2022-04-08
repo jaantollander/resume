@@ -3,9 +3,7 @@ Jaan Tollander de Balsch
 
 ----
 
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
+> I am interested to learn technical, business, and teamwork skills for working in software and data businesses. 
 
 ----
 
@@ -28,12 +26,23 @@ Experience
 ----------
 
 2021
-: **Cloud Trainee** at [*CSC*](https://csc.fi/en/)
+: **Cloud Trainee** at [*CSC - IT Center for Science*](https://csc.fi/en/)
+
+: As a Cloud Trainee at CSC, my task was to test their cloud services from the customer standpoint. That is, to examine how difficult it is to use their cloud services to deploy an application by relying on their technical documentation without prior knowledge about cloud computing. We could then use the results to improve the documentation and produce training material.
+
+: I tested the cloud services by developing a web application with the Julia language using the Genie framework. I chose the Julia language due to its advances in technical computing and to demonstrate that we can also run it on the cloud. Then, I deployed the application to OpenStack virtual machine on CSC Pouta and OpenShift container platform with CSC Rahti. The application is available in a GitHub repository with extensive documentation covering the application development and deployment.
 
 : Supervisors: *Kalle Happonen*
 
 2016 - 2021
 : **Research Assistant** at [*Systems Analysis Laboratory*](https://sal.aalto.fi/en/)
+
+: As summer and part-time worker at SAL, I have been responsible for
+developing multiple scientific software packages using the Julia programming
+language around mathematical models developed by my research group. Developing packages included interpreting scientific research, designing APIs, writing documentation, and creating tests. Packages used GitHub for the centralized repository, GitHub actions for automating testing and document deployment to GitHub pages.
+
+: I also have previous experience in Python. However, I prefer the Julia language
+for its superior performance and modern features for scientific computing
 
 : Supervisors: *Fabricio Oliveira*, *Anton von Schantz*
 
@@ -49,7 +58,7 @@ Technical Skills
 
 * **Programming**: Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
 
-* **Software Engineering**: Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify
+* **Software Engineering**: Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo
 
 * **Technical Writing**: Markdown, LaTeX, Pandoc
 
@@ -70,5 +79,5 @@ Projects
 
 ----
 
-> <jaan@hey.com> · [jaantollander.com](https://jaantollander.com/) · [github.com/jaantollander](https://github.com/jaantollander) \
+> <jaan@hey.com> · [jaantollander.com](https://jaantollander.com/) · [github.com/jaantollander](https://github.com/jaantollander) ·[youtube.com/jaantollander](https://www.youtube.com/jaantollander)\
 > Helsinki, Finland
