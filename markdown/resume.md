@@ -50,34 +50,41 @@ for its superior performance and modern features for scientific computing
 Technical Skills
 ----------------
 
-* **Natural Languages**: Finnish (native), English (professional)
+**Natural Languages** \
+Finnish (native), English (professional)
 
-* **Applied Mathematics**: Mathematical modeling, Optimization, Constraint programming, Logic, Numerical analysis, Computer algebra
+**Applied Mathematics** \
+Mathematical modeling, Optimization, Constraint programming, Logic, Numerical analysis, Computer algebra
 
-* **Computer Science**: Algorithm design, Data structures, Scientific computing, Parallel algorithms, Cloud computing, Web development, Information Security
+**Computer Science** \
+Algorithm design, Data structures, Scientific computing, Parallel algorithms, Cloud computing, Web development, Information Security
 
-* **Programming**: Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
+**Programming** \
+Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
 
-* **Software Engineering**: Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo
+**Software Engineering** \
+Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo
 
-* **Technical Writing**: Markdown, LaTeX, Pandoc
+**Technical Writing** \
+Markdown, LaTeX, Pandoc
 
-* **Development Environment**: Arch Linux, i3wm, Zsh, Tmux, NeoVim, VSCode
+**Development Environment** \
+Arch Linux, i3wm, Zsh, Tmux, NeoVim, VSCode
 
 
 Projects
 --------
 
-* [github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) and documentation
+[github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) and documentation
 
-* [github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) and documentation
+[github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) and documentation
 
-* [github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles)
+[github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles)
 
-* [jaantollander.com](https://jaantollander.com/)
+[jaantollander.com](https://jaantollander.com/)
 
 
 ----
 
-> <jaan@hey.com> · [jaantollander.com](https://jaantollander.com/) · [github.com/jaantollander](https://github.com/jaantollander) ·[youtube.com/jaantollander](https://www.youtube.com/jaantollander)\
+> <jaan@hey.com> · [jaantollander.com](https://jaantollander.com/) · [github.com/jaantollander](https://github.com/jaantollander) · [youtube.com/jaantollander](https://www.youtube.com/jaantollander)\
 > Helsinki, Finland
