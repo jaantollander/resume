@@ -27,6 +27,9 @@ jobs:
       - name: "Build resume HTML"
         run: "sh build.sh html"
 
+      - name: "Rename resume.html to index.html"
+        run: "mv ./output/resume.html ./output/index.html"
+
       - name: "Upload a Build Artifact"
         uses: "actions/upload-artifact@v2.2.3"
         with:
