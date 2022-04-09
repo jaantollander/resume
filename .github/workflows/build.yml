@@ -30,25 +30,25 @@ jobs:
       - name: "Rename resume.html to index.html"
         run: "mv ./output/resume.html ./output/index.html"
 
-      - name: "Upload a Build Artifact"
-        uses: "actions/upload-artifact@v2.2.3"
-        with:
-          name: "Resume"
-          # A file, directory or wildcard pattern that describes what to upload
-          path: "output/*.pdf"
-
-      - name: "Release resume"
-        uses: "softprops/action-gh-release@v1"
-        if: "startsWith(github.ref, 'refs/tags/')"
-        with:
-          files: |
-            output/*.pdf
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
       - name: "Deploy to GitHub pages"
         uses: "peaceiris/actions-gh-pages@v3"
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
           publish_dir: "./output"
-          exclude_assets: '*.log,*.tex,*.tuc,*.pdf'
+          exclude_assets: '*.log,*.tex,*.tuc'
+
+#      - name: "Upload a Build Artifact"
+#        uses: "actions/upload-artifact@v2.2.3"
+#        with:
+#          name: "Resume"
+#          # A file, directory or wildcard pattern that describes what to upload
+#          path: "output/*.pdf"
+#
+#      - name: "Release resume"
+#        uses: "softprops/action-gh-release@v1"
+#        if: "startsWith(github.ref, 'refs/tags/')"
+#        with:
+#          files: |
+#            output/*.pdf
+#        env:
+#          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
