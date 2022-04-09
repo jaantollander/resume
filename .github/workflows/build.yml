@@ -21,8 +21,11 @@ jobs:
       - name: "Install dependencies"
         run: "sudo apt install pandoc context"
 
-      - name: "Build resume"
+      - name: "Build resume PDF"
         run: "sh build.sh pdf"
+
+      - name: "Build resume HTML"
+        run: "sh build.sh html"
 
       - name: "Upload a Build Artifact"
         uses: "actions/upload-artifact@v2.2.3"
@@ -39,3 +42,10 @@ jobs:
             output/*.pdf
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: "Deploy to GitHub pages"
+        uses: "peaceiris/actions-gh-pages@v3"
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          publish_dir: "./output"
+          exclude_assets: '*.log,*.tex,*.tuc,*.pdf'
