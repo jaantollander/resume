@@ -2,6 +2,7 @@
 OUT_DIR=output
 IN_DIR=markdown
 STYLES_DIR=styles
+FILTERS_DIR=filters
 STYLE=chmduquesne
 
 pdf() {
@@ -44,11 +45,11 @@ html() {
         BASENAME=$(basename "$FILE")
         FILENAME=${BASENAME%.md}
 
-        echo "Output: $OUT_DIR/$FILE.html"
+        echo "Output: $OUT_DIR/$FILENAME.html"
         pandoc "$FILE" \
             --standalone \
             --include-in-header "$STYLES_DIR/$STYLE.css" \
-            --lua-filter="pdc-links-target-blank.lua" \
+            --lua-filter="$FILTERS_DIR/pdc-links-target-blank.lua" \
             --from "markdown" \
             --to "html" \
             --output "$OUT_DIR/$FILENAME.html" \
@@ -56,4 +57,21 @@ html() {
     done
 }
 
-"$*"
+help() {
+    echo "Build a resume of given type."
+    echo ""
+    echo "USAGE"
+    echo "  ./build.sh <type>"
+    echo ""
+    echo "EXAMPLES"
+    echo "  ./build.sh pdf"
+    echo "  ./build.sh html"
+}
+
+if test "$1" = "pdf"; then
+    $*
+elif test "$1" = "html"; then
+    $*
+else
+    help
+fi
