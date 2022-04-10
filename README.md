@@ -12,7 +12,7 @@ We can invoke GitHub Actions to publish the HTML and PDF version of the resume t
 
 ```sh
 git tag <tag-name>
-git push <tag-name>
+git push <remote> <tag-name>
 ```
 
 The [**HTML resume**](https://jaantollander.github.io/resume/) and the [**PDF resume**](https://jaantollander.github.io/resume/resume.pdf) will become available as seen on the links.

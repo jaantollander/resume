@@ -83,8 +83,9 @@ Projects
 
 [jaantollander.com](https://jaantollander.com/)
 
+[youtube.com/jaantollander](https://www.youtube.com/jaantollander)
 
 ----
 
-> <jaan@hey.com> · [jaantollander.com](https://jaantollander.com/) · [github.com/jaantollander](https://github.com/jaantollander) · [youtube.com/jaantollander](https://www.youtube.com/jaantollander)\
+> <jaan@hey.com> \
 > Helsinki, Finland
