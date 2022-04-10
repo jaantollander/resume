@@ -21,18 +21,21 @@ jobs:
       - name: "Install dependencies"
         run: "sudo apt install pandoc context"
 
+      - name: "Source variables and functions"
+        run: "source ./source.sh"
+
       - name: "Build resume PDF"
-        run: "sh build.sh pdf"
+        run: "pdf"
 
       - name: "Build resume HTML"
-        run: "sh build.sh html"
+        run: "html"
 
       - name: "Rename resume.html to index.html"
-        run: "mv ./output/resume.html ./output/index.html"
+        run: "mv ./$OUT_DIR/resume.html ./$OUT_DIR/index.html"
 
       - name: "Deploy to GitHub pages"
         uses: "peaceiris/actions-gh-pages@v3"
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
-          publish_dir: "./output"
+          publish_dir: "./$OUT_DIR"
           exclude_assets: '*.log,*.tex,*.tuc'
