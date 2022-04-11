@@ -78,9 +78,11 @@ Projects
 Here are some projects that demonstrate my technical skills.
 
 [github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) \
+[gamma-opt.github.io/DecisionProgramming.jl/](https://gamma-opt.github.io/DecisionProgramming.jl/) \
 Mathematical modeling, Optimization, Julia, Git-based workflows, Technical writing
 
 [github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) \
+[csc-training.github.io/GenieWebApp.jl/](https://csc-training.github.io/GenieWebApp.jl/) \
 Cloud computing, Julia, OpenStack, OpenShift, Technical writing
 
 [github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles) \
