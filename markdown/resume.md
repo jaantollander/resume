@@ -65,7 +65,7 @@ Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
 **Software Engineering** \
 Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo
 
-**Technical Writing** \
+**Technical Writing and Communication** \
 Markdown, LaTeX, Pandoc
 
 **Development Environment** \
@@ -75,15 +75,22 @@ Arch Linux, i3wm, Zsh, Tmux, NeoVim, VSCode
 Projects
 --------
 
-[github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) and documentation
+Here are some projects that demonstrate my technical skills.
 
-[github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) and documentation
+[github.com/gamma-opt/DecisionProgramming.jl](https://github.com/gamma-opt/DecisionProgramming.jl) \
+Mathematical modeling, Optimization, Julia, Git-based workflows, Technical writing
 
-[github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles)
+[github.com/csc-training/GenieWebApp.jl](https://github.com/csc-training/GenieWebApp.jl) \
+Cloud computing, Julia, OpenStack, OpenShift, Technical writing
 
-[jaantollander.com](https://jaantollander.com/)
+[github.com/jaantollander/dotfiles](https://github.com/jaantollander/dotfiles) \
+Arch Linux, Bash, Posix Shell, Configuration management
 
-[youtube.com/jaantollander](https://www.youtube.com/jaantollander)
+[jaantollander.com](https://jaantollander.com/) \
+Technical writing, GoHugo, Netlify, Web development
+
+[youtube.com/jaantollander](https://www.youtube.com/jaantollander) \
+Video making, Technical communication
 
 ----
 
