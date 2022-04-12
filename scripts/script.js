@@ -1,1 +1,1 @@
-<script defer data-domain="jaantollander.github.io" src="/js/script.js"></script>
+<script defer data-domain="jaantollander-resume.netlify.app" src="/js/script.js"></script>
