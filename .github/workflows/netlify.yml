@@ -42,7 +42,8 @@ jobs:
           git checkout --orphan "netlify"
           git rm --cached "netlify.toml"
           git rm -rf .
-          git commit -a -m "netlify"
+          git add .
+          git commit -m "netlify"
           ls --all --recursive --ignore=.git
 
       - name: "Push changes"
