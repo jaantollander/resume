@@ -94,7 +94,9 @@ Technical writing, GoHugo, Netlify, Web development
 [youtube.com/jaantollander](https://www.youtube.com/jaantollander) \
 Video making, Technical communication
 
-----
+Contact
+-------
 
-> <jaan@hey.com> \
-> Helsinki, Finland
+You can contact me via email.
+
+> <jaan@hey.com>
