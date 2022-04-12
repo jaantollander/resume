@@ -1,1 +1,1 @@
-<script defer data-domain="jaantollander.github.io" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="jaantollander.github.io" src="/js/script.js"></script>

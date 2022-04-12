@@ -1,0 +1,53 @@
+# Build and release new version of the resume if new tag is added.
+name: "netlify"
+
+on:
+  push:
+    #branches:
+    #  - "main"
+    tags:
+      - '*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-resume:
+    runs-on: "ubuntu-20.04"
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: "actions/checkout@v2"
+        with:
+          # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          persist-credentials: false
+          # otherwise, there would be errors pushing refs to the destination repository.
+          fetch-depth: 0
+
+      - name: "Install dependencies"
+        run: "sudo apt install git pandoc context"
+
+      - name: "Build resume"
+        run: |
+          source ./source.sh
+          pdf
+          html
+          rm ./public/*.log ./public/*.tex ./public/*.tuc
+          mv ./public/resume.html ./public/index.html
+          ls --all --recursive --ignore=.git
+
+      - name: "Create Netlify Branch"
+        run: |
+          git config --local user.email "jaan@hey.com"
+          git config --local user.name "jaantollander"
+          git checkout --orphan "netlify"
+          git rm --cached "netlify.toml"
+          git rm -rf .
+          git commit -a -m "netlify"
+          ls --all --recursive --ignore=.git
+
+      - name: "Push changes"
+        uses: "ad-m/github-push-action@master"
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          branch: "netlify"
+          force: true

@@ -1,12 +1,12 @@
 # Build and release new version of the resume if new tag is added.
-name: "build"
+name: "gh-pages"
 
 on:
   push:
     #branches:
     #  - "main"
-    tags:
-      - '*'
+    #tags:
+    #  - '*'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,11 +26,11 @@ jobs:
           source ./source.sh
           pdf
           html
-          mv ./$OUT_DIR/resume.html ./$OUT_DIR/index.html
+          rm ./public/*.log ./public/*.tex ./public/*.tuc
+          mv ./public/resume.html ./public/index.html
 
       - name: "Deploy to GitHub pages"
         uses: "peaceiris/actions-gh-pages@v3"
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
-          publish_dir: "./output"
-          exclude_assets: '*.log,*.tex,*.tuc'
+          publish_dir: "./public"

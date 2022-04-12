@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-OUT_DIR=output
+OUT_DIR=public
 IN_DIR=markdown
 STYLES_DIR=styles
 SCRIPTS_DIR=scripts
