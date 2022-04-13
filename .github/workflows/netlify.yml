@@ -17,11 +17,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: "actions/checkout@v2"
-        with:
-          # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          persist-credentials: false
-          # otherwise, there would be errors pushing refs to the destination repository.
-          fetch-depth: 0
 
       - name: "Install dependencies"
         run: |
@@ -37,14 +32,18 @@ jobs:
           ls --almost-all --recursive --ignore=.git
 
       - name: "Create and push new orphan branch"
+        env:
+          NAME: "jaantollander"
+          EMAIL: "jaantollander@users.noreply.github.com"
+          BRANCH: "netlify"
+        # https://stackoverflow.com/a/58393457
         run: |
-          git config --local user.name "jaantollander"
-          git config --local user.email "jaantollander@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git checkout --orphan "netlify"
+          git config --local user.name $NAME
+          git config --local user.email $EMAIL
+          git checkout --orphan $BRANCH
           git rm --cached "netlify.toml"
           git rm -rf .
           git add .
           git commit -m "gh-actions"
-          git push origin "netlify" -f
+          git push origin $BRANCH -f
           ls --almost-all --recursive --ignore=.git
