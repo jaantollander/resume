@@ -24,7 +24,8 @@ jobs:
           fetch-depth: 0
 
       - name: "Install dependencies"
-        run: "sudo apt install git pandoc context"
+        run: |
+          sudo apt install git pandoc context
 
       - name: "Build resume"
         run: |
@@ -33,22 +34,17 @@ jobs:
           html
           rm ./public/*.log ./public/*.tex ./public/*.tuc
           mv ./public/resume.html ./public/index.html
-          ls --all --recursive --ignore=.git
+          ls --almost-all --recursive --ignore=.git
 
-      - name: "Create Netlify Branch"
+      - name: "Create and push new orphan branch"
         run: |
-          git config --local user.email "jaan@hey.com"
           git config --local user.name "jaantollander"
+          git config --local user.email "jaantollander@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git checkout --orphan "netlify"
           git rm --cached "netlify.toml"
           git rm -rf .
           git add .
-          git commit -m "netlify"
-          ls --all --recursive --ignore=.git
-
-      - name: "Push changes"
-        uses: "ad-m/github-push-action@master"
-        with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-          branch: "netlify"
-          force: true
+          git commit -m "gh-actions"
+          git push origin "netlify" -f
+          ls --almost-all --recursive --ignore=.git
