@@ -15,4 +15,4 @@ git tag <tag-name>
 git push <remote> <tag-name>
 ```
 
-The [**HTML resume**](https://jaantollander.github.io/resume/) and the [**PDF resume**](https://jaantollander.github.io/resume/resume.pdf) will become available as seen on the links.
+The [**HTML resume**](https://jaantollander-resume.netlify.app) and the [**PDF resume**](https://jaantollander-resume.netlify.app/resume.pdf) will become available as seen on the links.
