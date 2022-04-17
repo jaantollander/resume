@@ -1,7 +1,7 @@
 # Build and release new version of the resume if new tag is added.
 name: "gh-pages"
 
-on:
+on: {}
 
 jobs:
   build-resume:
