@@ -1,7 +1,10 @@
 # Build and release new version of the resume if new tag is added.
 name: "gh-pages"
 
-on: {}
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   build-resume:
@@ -11,7 +14,8 @@ jobs:
       - uses: "actions/checkout@v2"
 
       - name: "Install dependencies"
-        run: "sudo apt install pandoc context"
+        run: |
+          sudo apt install pandoc context
 
       - name: "Build resume"
         run: |
