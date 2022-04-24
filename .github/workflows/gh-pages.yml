@@ -19,7 +19,7 @@ jobs:
 
       - name: "Build resume"
         run: |
-          source ./source.sh
+          . ./source.sh
           pdf
           html
           rm ./public/*.log ./public/*.tex ./public/*.tuc

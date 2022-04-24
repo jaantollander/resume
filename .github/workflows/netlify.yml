@@ -19,7 +19,7 @@ jobs:
 
       - name: "Build resume"
         run: |
-          source ./source.sh
+          . ./source.sh
           pdf
           html
           rm ./public/*.log ./public/*.tex ./public/*.tuc
@@ -33,12 +33,12 @@ jobs:
           BRANCH: "netlify"
         # https://stackoverflow.com/a/58393457
         run: |
-          git config --local user.name $NAME
-          git config --local user.email $EMAIL
-          git checkout --orphan $BRANCH
+          git config --local user.name "$NAME"
+          git config --local user.email "$EMAIL"
+          git checkout --orphan "$BRANCH"
           git rm --cached "netlify.toml"
           git rm -rf .
           git add .
           git commit -m "gh-actions"
-          git push origin $BRANCH -f
+          git push origin "$BRANCH" -f
           ls --almost-all --recursive --ignore=.git
