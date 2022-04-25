@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+  
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
+  
+  /* Definitions */
+  dt {
+      font-weight: bold;
+  }
+  dd {
+      margin-left: 0%;
+      margin-bottom:12px;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:15px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+  }
+  </style>
+  <script defer data-domain="jaantollander-resume.netlify.app" src="/js/script.js"></script>
+</head>
+<body>
+<h1 id="jaan-tollander-de-balsch">Jaan Tollander de Balsch</h1>
+<hr />
+<blockquote>
+<p>Problem solving with computational methods and software engineering.</p>
+</blockquote>
+<hr />
+<h2 id="education">Education</h2>
+<dl>
+<dt>2018 - 2022 (expected)</dt>
+<dd><p><strong>MSc in Computer Science</strong>, <a href="https://www.aalto.fi/en" target="_blank"><em>Aalto University</em></a></p>
+<p>Track: <em>Algorithms, Logic and Computation</em></p>
+</dd>
+<dt>2014 - 2018</dt>
+<dd><p><strong>BSc in Applied Mathematics</strong>, <a href="https://www.aalto.fi/en" target="_blank"><em>Aalto University</em></a></p>
+<p>Minor: <em>Computer Science</em></p>
+</dd>
+</dl>
+<h2 id="experience">Experience</h2>
+<dl>
+<dt>2021</dt>
+<dd><strong>Cloud Trainee</strong> at <a href="https://csc.fi/en/" target="_blank"><em>CSC - IT Center for Science</em></a>
+</dd>
+<dd><p>As a Cloud Trainee at CSC, my task was to test their cloud services from the customer standpoint. That is, to examine how difficult it is to use their cloud services to deploy an application by relying on their technical documentation without prior knowledge about cloud computing. We could then use the results to improve the documentation and produce training material.</p>
+</dd>
+<dd><p>I tested the cloud services by developing a web application with the Julia language using the Genie framework. I chose the Julia language due to its advances in technical computing and to demonstrate that we can also run it on the cloud. Then, I deployed the application to OpenStack virtual machine on CSC Pouta and OpenShift container platform with CSC Rahti. The application is available in a GitHub repository with extensive documentation covering the application development and deployment.</p>
+</dd>
+<dd><p>Supervisors: <em>Kalle Happonen</em></p>
+</dd>
+<dt>2016 - 2021</dt>
+<dd><strong>Research Assistant</strong> at <a href="https://sal.aalto.fi/en/" target="_blank"><em>Systems Analysis Laboratory</em></a>
+</dd>
+<dd><p>As summer and part-time worker at SAL, I have been responsible for developing multiple scientific software packages using the Julia programming language around mathematical models developed by my research group. Developing packages included interpreting scientific research, designing APIs, writing documentation, and creating tests. Packages used GitHub for the centralized repository, GitHub actions for automating testing and document deployment to GitHub pages.</p>
+</dd>
+<dd><p>I also have previous experience in Python. However, I prefer the Julia language for its superior performance and modern features for scientific computing</p>
+</dd>
+<dd><p>Supervisors: <em>Fabricio Oliveira</em>, <em>Anton von Schantz</em></p>
+</dd>
+</dl>
+<h2 id="technical-skills">Technical Skills</h2>
+<p><strong>Natural Languages</strong><br />
+Finnish (native), English (professional)</p>
+<p><strong>Applied Mathematics</strong><br />
+Mathematical modeling, Optimization, Constraint programming, Logic, Numerical analysis, Computer algebra</p>
+<p><strong>Computer Science</strong><br />
+Algorithm design, Data structures, Scientific computing, Parallel algorithms, Cloud computing, Web development, Information Security</p>
+<p><strong>Programming</strong><br />
+Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc</p>
+<p><strong>Software Engineering</strong><br />
+Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo</p>
+<p><strong>Technical Writing and Communication</strong><br />
+Markdown, LaTeX, Pandoc</p>
+<p><strong>Development Environment</strong><br />
+Arch Linux, i3wm, Zsh, Tmux, NeoVim, VSCode</p>
+<h2 id="projects">Projects</h2>
+<p>Here are some projects that demonstrate my technical skills.</p>
+<p><a href="https://github.com/gamma-opt/DecisionProgramming.jl" target="_blank">github.com/gamma-opt/DecisionProgramming.jl</a><br />
+<a href="https://gamma-opt.github.io/DecisionProgramming.jl/" target="_blank">gamma-opt.github.io/DecisionProgramming.jl/</a><br />
+Mathematical modeling, Optimization, Julia, Git-based workflows, Technical writing</p>
+<p><a href="https://github.com/csc-training/GenieWebApp.jl" target="_blank">github.com/csc-training/GenieWebApp.jl</a><br />
+<a href="https://csc-training.github.io/GenieWebApp.jl/" target="_blank">csc-training.github.io/GenieWebApp.jl/</a><br />
+Cloud computing, Julia, OpenStack, OpenShift, Technical writing</p>
+<p><a href="https://github.com/jaantollander/dotfiles" target="_blank">github.com/jaantollander/dotfiles</a><br />
+Arch Linux, Bash, Posix Shell, Configuration management</p>
+<p><a href="https://jaantollander.com/" target="_blank">jaantollander.com</a><br />
+Technical writing, GoHugo, Netlify, Web development</p>
+<p><a href="https://www.youtube.com/jaantollander" target="_blank">youtube.com/jaantollander</a><br />
+Video making, Technical communication</p>
+<h2 id="contact">Contact</h2>
+<p>You can contact me via email.</p>
+<blockquote>
+<p><a href="mailto:jaan@hey.com" class="email">jaan@hey.com</a></p>
+</blockquote>
+</body>
+</html>
