@@ -3,7 +3,7 @@ Jaan Tollander de Balsch
 
 ----
 
-> I am interested to learn technical, business, and teamwork skills for working in software and data businesses. 
+> Problem solving with computational methods and software engineering.
 
 ----
 
