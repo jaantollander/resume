@@ -63,7 +63,7 @@ Algorithm design, Data structures, Scientific computing, Parallel algorithms, Cl
 Julia, Bash, Python, C, C++, Haskell, Posix Shell, MiniZinc
 
 **Software Engineering** \
-Linux, Git, GitHub, Git-based workflows, Docker, Podman, OpenStack, OpenShift, Netlify, GoHugo
+Linux, Git, GitHub, Git-based workflows, OCI containers, Docker, OpenStack, OpenShift, Netlify, GoHugo
 
 **Technical Writing and Communication** \
 Markdown, LaTeX, Pandoc
